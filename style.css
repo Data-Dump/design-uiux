@@ -374,6 +374,32 @@ html, body {
   min-height: 0;
 }
 
+.persona-right--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+  width: auto;
+  align-content: center;
+  justify-items: center;
+}
+
+.persona-right--grid .phone-frame {
+  width: 200px;
+  height: 400px;
+  margin: 0;
+}
+
+.feature-snippet {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+  align-self: start;
+}
+
 .persona-section {
   animation: fadeUp 0.6s ease both;
 }
@@ -443,6 +469,20 @@ html, body {
   justify-content: center;
   animation: phoneIn 0.7s ease both;
   animation-delay: 0.3s;
+}
+
+.persona-right--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-content: center;
+  width: 60%;
+}
+
+.persona-right--grid .phone-frame {
+  width: 250px;
+  height: 500px;
 }
 
 .phone-notch {
